@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: tiktok-profile-reporter
+    env: docker
+    plan: starter
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8000
